@@ -54,7 +54,7 @@ var users = [
 var getUser = function(args) {
   var userID = args.id;
   return users.filter(user => user.id == userID)[0];
-}
+};
 
 // Return a list of users (takes an optional shark parameter)
 var retrieveUsers = function(args) {
@@ -64,7 +64,7 @@ var retrieveUsers = function(args) {
   } else {
     return users;
   }
-}
+};
 
 // Root resolver
 var root = {
